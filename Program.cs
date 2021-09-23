@@ -4,12 +4,11 @@ namespace ContaCorrente
 {
     class Program
     {
-
-        
+    
         static void Main(string[] args)
         {
-            var tributacao = new Taxes();
-            tributacao.Taxation();
+            var PayTaxes = new Taxes();
+            PayTaxes.Taxation();
         }
     }
 }

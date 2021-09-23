@@ -9,7 +9,7 @@ namespace ContaCorrente
     public class Taxes
     {
         public double Tax;
-        public double impostoapagar;
+        public double ImpostoAPagar;
 
         public void Taxation()
         {
@@ -18,22 +18,22 @@ namespace ContaCorrente
             
             Tax = SaldoConta.SaldoValor;
 
-            Console.WriteLine(Tax);
+            Console.WriteLine("O saldo da sua conta é de: " + "R$" + Tax.ToString("N2"));
             {
                 if (Tax <= 900)
-                    impostoapagar = (Tax * 0.02);
+                    ImpostoAPagar = (Tax * 0.02);
 
                 if (Tax > 900 && Tax <= 2999)
-                    impostoapagar = (Tax * 0.025);
+                    ImpostoAPagar = (Tax * 0.025);
 
                 if (Tax > 2999 && Tax <= 6999)
-                    impostoapagar = (Tax * 0.028);
+                    ImpostoAPagar = (Tax * 0.028);
 
-                if (Tax >6999) 
-                        impostoapagar = (Tax * 0.3);
+                if (Tax > 6999)
+                    ImpostoAPagar = (Tax * 0.3);
             }
           
-            Console.WriteLine(impostoapagar);
+            Console.WriteLine("O valor a ser pago de impostos é: " +"R$"+ ImpostoAPagar.ToString("N2"));
         }
         
     }
