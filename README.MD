@@ -1,4 +1,4 @@
-<h2>Criação de aplicação console em C# para calculo de área</h2>
+<h2>Criação de aplicação console em C# para calculo de impostos referentes ao saldo de uma conta</h2>
 
 Foram necessários os seguintes pré-requisitos para o desenvolvimento do projeto:
 
