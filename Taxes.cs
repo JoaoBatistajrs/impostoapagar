@@ -20,19 +20,20 @@ namespace ContaCorrente
 
             Console.WriteLine(Tax);
             {
-                if (Tax <= 900) { impostoapagar = (Tax * 2); }
-                   
+                if (Tax <= 900)
+                    impostoapagar = (Tax * 0.02);
 
-                else if (Tax > 900 && Tax <= 2999) { impostoapagar = (Tax * 0.025); }
-                    
+                if (Tax > 900 && Tax <= 2999)
+                    impostoapagar = (Tax * 0.025);
 
-                else if (Tax > 2999 && Tax <= 6999) { impostoapagar = (Tax * 0.028); }
+                if (Tax > 2999 && Tax <= 6999)
+                    impostoapagar = (Tax * 0.028);
 
-
-                impostoapagar = (Tax * 0.3);
-
-            Console.WriteLine(impostoapagar);
+                if (Tax >6999) 
+                        impostoapagar = (Tax * 0.3);
             }
+          
+            Console.WriteLine(impostoapagar);
         }
         
     }
